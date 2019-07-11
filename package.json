@@ -1,0 +1,9 @@
+{
+  "scripts": {
+      "start": "lite-server",
+      "less": "lessc: css/main.less css/main.css"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.3"
+  }
+}
