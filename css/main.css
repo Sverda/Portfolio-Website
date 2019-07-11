@@ -16,3 +16,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 15%;
+  height: 100%;
+  background-color: rgba(20, 64, 80, 0.35);
+  border: 4px;
+  border-color: rgba(112, 112, 112, 0.8);
+}
