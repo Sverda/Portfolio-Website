@@ -1,14 +1,17 @@
 @blurRange: 7px;
+@primaryColor: fade(rgb(0, 0, 0), 50%);
+@secondaryColor: fade(rgb(50, 50, 50), 40%);
+@tertiaryColor: fade(rgb(90, 90, 90), 50%);
 @barTheme: 
 {
-    @primaryColor: fade(rgb(0, 0, 0), 35%);
-    @secondaryColor: fade(rgb(63, 63, 63), 80%);
-    background-color: @primaryColor;
-    border: 4px;
-    border-color: @secondaryColor;
+    background-color: @secondaryColor;
+    border-width: 1px;
+    border-style: solid;
+    border-color: @tertiaryColor;
 };
+@navBarWidth: 15%;
 
-body
+html, body
 {
     width: 100%;
     height: 100%;
@@ -43,10 +46,25 @@ body
     top: 0;
     left: 0;
     
-    width: 15%;
+    width: @navBarWidth;
     height: 100%;
     
     @barTheme();
+}
+
+.content
+{
+    position: relative;
+    top: 0;
+    left: @navBarWidth;
+
+    width: 55%;
+    height: 100%;
+
+    background-color: @primaryColor;
+    border-width: 1px;
+    border-style: solid;
+    border-color: @tertiaryColor;
 }
 
 .socialbar
