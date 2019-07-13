@@ -10,27 +10,6 @@
     border-color: @tertiaryColor;
 };
 @navBarWidth: 15%;
-@button:
-{
-    @width: 75%;
-    width: @width;
-    height: 5%;
-    @center: 50%-@width/2;
-    margin: 10px 10px 10px @center;
-
-    cursor: pointer;
-    background: none;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-position: 5% 50%;
-    
-    border: none;
-    border-bottom: 1px solid #707070;
-
-    font-family: Inconsolanta, Courier, monospace;
-    color: white;
-    font-size: 20px;
-};
 
 html, body
 {
@@ -100,26 +79,89 @@ html, body
     @barTheme();
 }
 
-.homeButton
+@button:
+{
+    @width: 75%;
+    width: @width;
+    height: 5%;
+    @center: 50%-@width/2;
+    margin: 10px 10px 10px @center;
+
+    cursor: pointer;
+    background: none;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    
+    border: none;
+};
+
+@navbarButton:
 {
     @button();
+    border-bottom: 1px solid #707070;
+
+    font-family: Inconsolanta, Courier, monospace;
+    color: white;
+    font-size: 20px;
+};
+
+.homeButton
+{
+    @navbarButton();
     background-image: url(../img/baseline-home-24px.svg);
 }
 
 .skillsButton
 {
-    @button();
+    @navbarButton();
     background-image: url(../img/baseline-settings-20px.svg);
 }
 
 .contactButton
 {
-    @button();
+    @navbarButton();
     background-image: url(../img/baseline-mail_outline-24px.svg);
 }
 
 .aboutButton
 {
-    @button();
+    @navbarButton();
     background-image: url(../img/baseline-list-24px.svg);
+}
+
+.facebookButton
+{
+    @button();
+    background-image: url(../img/icons8-facebook.svg);
+}
+
+.twitterButton
+{
+    @button();
+    background-image: url(../img/icons8-twitter.svg);
+}
+
+.instagramButton
+{
+    @button();
+    background-image: url(../img/icons8-instagram.svg);
+}
+
+.linkedinButton
+{
+    @button();
+    background-image: url(../img/icons8-linkedin.svg);
+}
+
+.githubButton
+{
+    @button();
+    background-image: url(../img/icons8-octocat.svg);
+}
+
+.youtubeButton
+{
+    @button();
+    background-image: url(../img/icons8-play-button.svg);
 }
