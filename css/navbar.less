@@ -1,0 +1,74 @@
+@primaryColor: fade(rgb(0, 0, 0), 50%);
+@secondaryColor: fade(rgb(50, 50, 50), 40%);
+@tertiaryColor: fade(rgb(90, 90, 90), 50%);
+@navBarWidth: 15%;
+@barTheme: 
+{
+    background-color: @secondaryColor;
+    border-width: 1px;
+    border-style: solid;
+    border-color: @tertiaryColor;
+};
+
+.navbar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: @navBarWidth;
+    height: 100%;
+    
+    @barTheme();
+}
+
+@button:
+{
+    @width: 75%;
+    width: @width;
+    height: 5%;
+    @center: 50%-@width/2;
+    margin: 10px 10px 10px @center;
+
+    cursor: pointer;
+    background: none;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    
+    border: none;
+};
+
+@navbarButton:
+{
+    @button();
+    border-bottom: 1px solid #707070;
+
+    font-family: Inconsolanta, Courier, monospace;
+    color: white;
+    font-size: 20px;
+};
+
+.homeButton
+{
+    @navbarButton();
+    background-image: url(../img/baseline-home-24px.svg);
+}
+
+.skillsButton
+{
+    @navbarButton();
+    background-image: url(../img/baseline-settings-20px.svg);
+}
+
+.contactButton
+{
+    @navbarButton();
+    background-image: url(../img/baseline-mail_outline-24px.svg);
+}
+
+.aboutButton
+{
+    @navbarButton();
+    background-image: url(../img/baseline-list-24px.svg);
+}
