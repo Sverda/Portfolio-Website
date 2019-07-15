@@ -1,15 +1,6 @@
-@primaryColor: fade(rgb(0, 0, 0), 50%);
-@secondaryColor: fade(rgb(50, 50, 50), 40%);
-@tertiaryColor: fade(rgb(90, 90, 90), 50%);
-@navBarWidth: 15%;
-@barTheme: 
-{
-    background-color: @secondaryColor;
-    border-width: 1px;
-    border-style: solid;
-    border-color: @tertiaryColor;
-};
+@import url(basebar.less);
 
+@navBarWidth: 15%;
 .navbar
 {
     position: fixed;
@@ -22,26 +13,9 @@
     @barTheme();
 }
 
-@button:
-{
-    @width: 75%;
-    width: @width;
-    height: 5%;
-    @center: 50%-@width/2;
-    margin: 10px 10px 10px @center;
-
-    cursor: pointer;
-    background: none;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-position: 5% 50%;
-    
-    border: none;
-};
-
 @navbarButton:
 {
-    @button();
+    @buttonTheme();
     border-bottom: 1px solid #707070;
 
     font-family: Inconsolanta, Courier, monospace;
