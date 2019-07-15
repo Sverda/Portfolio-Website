@@ -59,3 +59,25 @@
   border-style: solid;
   border-color: rgba(90, 90, 90, 0.5);
 }
+.contentContainer h1 {
+  margin-top: 2em;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: Inconsolata, Courier, monospace;
+  font-size: 4em;
+  color: white;
+}
+.contentContainer hr {
+  width: 80%;
+}
+.contentContainer h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: 'Baskerville Old Face', Courier, monospace;
+  font-size: 2em;
+  color: white;
+}
+.contentContainer section {
+  color: white;
+}

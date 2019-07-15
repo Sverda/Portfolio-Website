@@ -1,16 +1,44 @@
-@import url(navbar.less);
+@import (once) url(navbar.less);
 
+@containerWidth: 55%;
+@containerHeight: 100%;
 .contentContainer
 {
     position: relative;
     top: 0;
     left: @navBarWidth;
 
-    width: 55%;
-    height: 100%;
+    width: @containerWidth;
+    height: @containerHeight;
 
     background-color: @primaryColor;
     border-width: 1px;
     border-style: solid;
     border-color: @tertiaryColor;
+
+    .header(@marginBottom, @mainFont, @fontSize)
+    {
+        margin-top: 2em;
+        margin-bottom: @marginBottom;
+        text-align: center;
+        font-family: @mainFont, Courier, monospace;
+        font-size: @fontSize;
+        color: white;
+    }
+    h1
+    {
+        .header(0, Inconsolata, 4em);
+    }
+    hr
+    {
+        width: 80%;
+    }
+    h2
+    {
+        .header(1em, 'Baskerville Old Face', 2em);
+    }
+    section
+    {
+        color: white;
+    }
 }
