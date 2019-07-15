@@ -1,7 +1,7 @@
-@import url(basebar.less);
+@import (reference) url(basebar.less);
 
 @navBarWidth: 15%;
-.navbar
+.navbar:extend(.barTheme)
 {
     position: fixed;
     top: 0;
@@ -9,40 +9,33 @@
     
     width: @navBarWidth;
     height: 100%;
-    
-    @barTheme();
 }
 
-@navbarButton:
+.navbarButton:extend(.buttonTheme)
 {
-    @buttonTheme();
     border-bottom: 1px solid #707070;
 
     font-family: Inconsolanta, Courier, monospace;
     color: white;
     font-size: 20px;
-};
+}
 
-.homeButton
+.homeButton:extend(.navbarButton)
 {
-    @navbarButton();
     background-image: url(../img/baseline-home-24px.svg);
 }
 
-.skillsButton
+.skillsButton:extend(.navbarButton)
 {
-    @navbarButton();
     background-image: url(../img/baseline-settings-20px.svg);
 }
 
-.contactButton
+.contactButton:extend(.navbarButton)
 {
-    @navbarButton();
     background-image: url(../img/baseline-mail_outline-24px.svg);
 }
 
-.aboutButton
+.aboutButton:extend(.navbarButton)
 {
-    @navbarButton();
     background-image: url(../img/baseline-list-24px.svg);
 }
