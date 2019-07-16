@@ -33,19 +33,33 @@
 .contactButton,
 .aboutButton {
   border-bottom: 1px solid #707070;
+  border-radius: 20px 20px 0px 0px;
   font-family: Inconsolanta, Courier, monospace;
   color: white;
   font-size: 20px;
+  transition: background-color 0.4s linear;
 }
 .homeButton {
   background-image: url(../img/baseline-home-24px.svg);
 }
+.homeButton:hover {
+  background-color: rgba(146, 14, 62, 0.5);
+}
 .skillsButton {
   background-image: url(../img/baseline-settings-20px.svg);
+}
+.skillsButton:hover {
+  background-color: rgba(102, 217, 239, 0.5);
 }
 .contactButton {
   background-image: url(../img/baseline-mail_outline-24px.svg);
 }
+.contactButton:hover {
+  background-color: rgba(166, 226, 46, 0.5);
+}
 .aboutButton {
   background-image: url(../img/baseline-list-24px.svg);
+}
+.aboutButton:hover {
+  background-color: rgba(253, 151, 31, 0.5);
 }
