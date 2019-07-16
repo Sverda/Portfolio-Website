@@ -9,7 +9,8 @@
 .instagramButton,
 .linkedinButton,
 .githubButton,
-.youtubeButton {
+.youtubeButton,
+.shareButton {
   width: 75%;
   height: 5%;
   margin: 10px 10px 10px 12.5%;
@@ -45,4 +46,9 @@
 }
 .youtubeButton {
   background-image: url(../img/icons8-play-button.svg);
+}
+.shareButton {
+  background-image: url(../img/baseline-share-24px.svg);
+  position: absolute;
+  bottom: 2%;
 }

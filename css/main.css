@@ -12,6 +12,7 @@
 .linkedinButton,
 .githubButton,
 .youtubeButton,
+.shareButton,
 .homeButton,
 .skillsButton,
 .contactButton,
@@ -94,6 +95,11 @@
 }
 .youtubeButton {
   background-image: url(../img/icons8-play-button.svg);
+}
+.shareButton {
+  background-image: url(../img/baseline-share-24px.svg);
+  position: absolute;
+  bottom: 2%;
 }
 .contentContainer {
   position: relative;
