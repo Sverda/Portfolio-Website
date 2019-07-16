@@ -19,6 +19,7 @@
   background-repeat: no-repeat;
   background-position: 5% 50%;
   border: none;
+  outline: none;
 }
 .socialbar {
   position: fixed;
