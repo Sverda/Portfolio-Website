@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -18,28 +19,32 @@
 
 <body>
   <div class="background-image"></div>
-  <div class="navbar">
-    <button class="homeButton">Home</button>
-    <button class="skillsButton">Skills</button>
-    <button class="contactButton">Contact</button>
-    <button class="aboutButton">About</button>
-  </div>
-  <div class="contentContainer">
-    <h1>Section Title</h1>
-    <hr/>
-    <h2>Section Subtitle</h2>
-    <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper neque 
-      eget bibendum tincidunt. Cras semper lacus vitae odio rhoncus varius. Duis 
-      interdum fringilla congue. Quisque eget rutrum arcu. </section>
-  </div>
-  <div class="socialbar">
-    <button class="facebookButton"></button>
-    <button class="twitterButton"></button>
-    <button class="instagramButton"></button>
-    <button class="linkedinButton"></button>
-    <button class="githubButton"></button>
-    <button class="youtubeButton"></button>
-    <button class="shareButton"></button>
+  <div class="root container">
+    <div class="navbar row">
+      <button class="homeButton">Home</button>
+      <button class="skillsButton">Skills</button>
+      <button class="contactButton">Contact</button>
+      <button class="aboutButton">About</button>
+    </div>
+    <div class="contentContainer row">
+      <h1>Section Title</h1>
+      <hr/>
+      <h2>Section Subtitle</h2>
+      <section>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper neque 
+        eget bibendum tincidunt. Cras semper lacus vitae odio rhoncus varius. Duis 
+        interdum fringilla congue. Quisque eget rutrum arcu. 
+      </section>
+    </div>
+    <div class="socialbar row">
+      <button class="facebookButton"></button>
+      <button class="twitterButton"></button>
+      <button class="instagramButton"></button>
+      <button class="linkedinButton"></button>
+      <button class="githubButton"></button>
+      <button class="youtubeButton"></button>
+      <button class="shareButton"></button>
+    </div>
   </div>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>

@@ -1,9 +1,12 @@
 {
   "scripts": {
-      "start": "lite-server",
-      "less": "lessc: css/main.less css/main.css"
+    "start": "lite-server",
+    "less": "lessc: css/main.less css/main.css"
   },
   "devDependencies": {
     "lite-server": "^2.5.3"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1"
   }
 }
