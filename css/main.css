@@ -29,11 +29,8 @@
   outline: none;
 }
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 15%;
   height: 100%;
+  margin: 0;
 }
 .navbarButton,
 .homeButton,
@@ -72,10 +69,6 @@
   background-color: rgba(253, 151, 31, 0.5);
 }
 .socialbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 3%;
   height: 100%;
 }
 .facebookButton {
@@ -102,10 +95,6 @@
   bottom: 2%;
 }
 .contentContainer {
-  position: relative;
-  top: 0;
-  left: 15%;
-  width: 55%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   border-width: 1px;
@@ -142,6 +131,12 @@ body,
 .root {
   width: 100%;
   height: 100%;
+}
+.container,
+.container-fluid,
+.row {
+  margin: 0;
+  padding: 0;
 }
 .background-image:before {
   width: 100%;

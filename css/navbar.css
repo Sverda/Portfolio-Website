@@ -21,11 +21,8 @@
   outline: none;
 }
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 15%;
   height: 100%;
+  margin: 0;
 }
 .navbarButton,
 .homeButton,
