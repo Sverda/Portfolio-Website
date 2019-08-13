@@ -22,6 +22,7 @@
   background-image: url();
   background-repeat: no-repeat;
   background-position: 5% 50%;
+  background-size: contain;
   border: none;
   outline: none;
 }

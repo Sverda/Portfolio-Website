@@ -12,17 +12,18 @@
   }
 }
 .navbarButton,
+.socialButton,
+.homeButton,
+.skillsButton,
+.contactButton,
+.aboutButton,
 .facebookButton,
 .twitterButton,
 .instagramButton,
 .linkedinButton,
 .githubButton,
 .youtubeButton,
-.shareButton,
-.homeButton,
-.skillsButton,
-.contactButton,
-.aboutButton {
+.shareButton {
   width: 75%;
   height: 5%;
   margin: 10px 10px 10px 12.5%;
@@ -31,6 +32,7 @@
   background-image: url();
   background-repeat: no-repeat;
   background-position: 5% 50%;
+  background-size: contain;
   border: none;
   outline: none;
 }
@@ -72,6 +74,32 @@
 }
 .aboutButton:hover {
   background-color: rgba(253, 151, 31, 0.5);
+}
+@media (max-width: 767px) {
+  .socialButton,
+  .facebookButton,
+  .twitterButton,
+  .instagramButton,
+  .linkedinButton,
+  .githubButton,
+  .youtubeButton,
+  .shareButton {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .socialButton,
+  .facebookButton,
+  .twitterButton,
+  .instagramButton,
+  .linkedinButton,
+  .githubButton,
+  .youtubeButton,
+  .shareButton {
+    width: 40px;
+    height: 40px;
+  }
 }
 .facebookButton {
   background-image: url(../img/icons8-facebook.svg);

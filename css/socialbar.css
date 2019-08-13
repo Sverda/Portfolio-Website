@@ -9,6 +9,7 @@
     height: 100%;
   }
 }
+.socialButton,
 .facebookButton,
 .twitterButton,
 .instagramButton,
@@ -24,8 +25,35 @@
   background-image: url();
   background-repeat: no-repeat;
   background-position: 5% 50%;
+  background-size: contain;
   border: none;
   outline: none;
+}
+@media (max-width: 767px) {
+  .socialButton,
+  .facebookButton,
+  .twitterButton,
+  .instagramButton,
+  .linkedinButton,
+  .githubButton,
+  .youtubeButton,
+  .shareButton {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .socialButton,
+  .facebookButton,
+  .twitterButton,
+  .instagramButton,
+  .linkedinButton,
+  .githubButton,
+  .youtubeButton,
+  .shareButton {
+    width: 40px;
+    height: 40px;
+  }
 }
 .facebookButton {
   background-image: url(../img/icons8-facebook.svg);
