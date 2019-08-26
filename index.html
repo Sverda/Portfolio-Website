@@ -17,15 +17,17 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="container-fluid">
+<body>
   <div class="background-image"></div>
-  <div class="navbar col-lg-2">
+
+  <header class="container-fluid navbar">
     <button class="homeButton">Home</button>
     <button class="skillsButton">Skills</button>
     <button class="contactButton">Contact</button>
     <button class="aboutButton">About</button>
-  </div>
-  <div class="contentContainer col-lg-6">
+  </header>
+  
+  <div class="container-fluid contentContainer">
     <h1>Section Title</h1>
     <hr/>
     <h2>Section Subtitle</h2>
@@ -35,20 +37,21 @@
       interdum fringilla congue. Quisque eget rutrum arcu. 
     </section>
   </div>
-  <div class="col-lg-3"></div>
-  <div class="socialbar col-lg-1">
+
+  <footer class="container-fluid socialbar">
     <div class="row">
-        <button class="col-2 facebookButton"></button>
-        <button class="col-2 twitterButton"></button>
-        <button class="col-2 instagramButton"></button>
-        <button class="col-2 linkedinButton"></button>
-        <button class="col-2 githubButton"></button>
-        <button class="col-2 youtubeButton"></button>
-        <!-- <button class="shareButton"></button> -->
+      <button class="col-2 facebookButton"></button>
+      <button class="col-2 twitterButton"></button>
+      <button class="col-2 instagramButton"></button>
+      <button class="col-2 linkedinButton"></button>
+      <button class="col-2 githubButton"></button>
+      <button class="col-2 youtubeButton"></button>
+      <!-- <button class="shareButton"></button> -->
     </div>
-  </div>
+  </footer>
   
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="js/vendor/jquery-3.4.1.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>
