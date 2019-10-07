@@ -20,12 +20,26 @@
 <body>
   <div class="background-image"></div>
 
-  <header class="container-fluid navbar">
-    <button class="homeButton">Home</button>
-    <button class="skillsButton">Skills</button>
-    <button class="contactButton">Contact</button>
-    <button class="aboutButton">About</button>
-  </header>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><button class="homeButton">Home</button></li>
+          <li><button class="skillsButton">Skills</button></li>
+          <li><button class="contactButton">Contact</button></li>
+          <li><button class="aboutButton">About</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   
   <div class="container-fluid contentContainer">
     <h1>Section Title</h1>
@@ -52,6 +66,7 @@
   
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="js/vendor/jquery-3.4.1.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>
