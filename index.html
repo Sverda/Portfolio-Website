@@ -29,15 +29,15 @@
       </button>
     </div>
     <div class="collapse navbar-collapse">
-      <button class="homeButton">Home</button>
-      <button class="skillsButton">Skills</button>
-      <button class="contactButton">Contact</button>
-      <button class="aboutButton">About</button>
+      <button class="homeButton" onclick="window.location.href = '#homeSection'">Home</button>
+      <button class="skillsButton" onclick="window.location.href = '#skillsSection'">Skills</button>
+      <button class="contactButton" onclick="window.location.href = '#contactSection'">Contact</button>
+      <button class="aboutButton" onclick="window.location.href = '#aboutSection'">About</button>
     </div>
   </nav>
   
   <div class="container-fluid">
-    <div class="contentContainer">
+    <div class="contentContainer" id='homeSection'>
       <h1>Home Section Title</h1>
       <hr/>
       <h2>Section Subtitle</h2>
@@ -48,7 +48,7 @@
       </section>
     </div>
 
-    <div class="contentContainer">
+    <div class="contentContainer" id='skillsSection'>
       <h1>Skills Section Title</h1>
       <hr/>
       <h2>Section Subtitle</h2>
@@ -59,7 +59,7 @@
       </section>
     </div>
     
-    <div class="contentContainer">
+    <div class="contentContainer" id='contactSection'>
       <h1>Contact Section Title</h1>
       <hr/>
       <h2>Section Subtitle</h2>
@@ -70,7 +70,7 @@
       </section>
     </div>
     
-    <div class="contentContainer">
+    <div class="contentContainer" id="aboutSection">
       <h1>About Section Title</h1>
       <hr/>
       <h2>Section Subtitle</h2>
