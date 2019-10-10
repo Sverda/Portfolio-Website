@@ -2,7 +2,23 @@
 
 .navbar:extend(.barTheme)
 {
+    @offsite: 18%;
+    
     margin: 0;
+    @media (min-width: 992px) 
+    {
+        position: fixed;
+        max-width: @offsite;
+    }
+    
+    & + .container-fluid 
+    {
+        @media (min-width: 992px)
+        {
+            padding-left: @offsite;
+            z-index: 1;
+        }
+    }
 }
 
 .navbarButton:extend(.buttonTheme)

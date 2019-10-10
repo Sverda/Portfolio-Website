@@ -39,6 +39,18 @@
 .navbar {
   margin: 0;
 }
+@media (min-width: 992px) {
+  .navbar {
+    position: fixed;
+    max-width: 18%;
+  }
+}
+@media (min-width: 992px) {
+  .navbar + .container-fluid {
+    padding-left: 18%;
+    z-index: 1;
+  }
+}
 .navbarButton,
 .homeButton,
 .skillsButton,
