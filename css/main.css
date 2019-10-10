@@ -48,7 +48,6 @@
 @media (min-width: 992px) {
   .navbar + .container-fluid {
     padding-left: 18%;
-    z-index: 1;
   }
 }
 .navbarButton,
