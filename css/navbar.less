@@ -9,6 +9,12 @@
     {
         position: fixed;
         max-width: @offsite;
+
+        ul
+        {
+            min-width: @offsite;
+            padding: 0;
+        }
     }
     
     & + .container-fluid 
@@ -27,8 +33,8 @@
         .buttonTheme();
         
         border-bottom: 1px solid #707070;
-        border-radius: 20px 20px 0px 0px;
 
+        text-align: center;
         font-family: Inconsolanta, Courier, monospace;
         color: white;
         font-size: 20px;
@@ -44,6 +50,8 @@
         {
             background-image: @image;
             background-color: @color;
+            
+            border-radius: 20px 20px 0px 0px;
         }
     }
 
@@ -52,6 +60,8 @@
         a, a:hover, a:active
         {
             background-color: @color;
+            
+            border-radius: 20px 20px 0px 0px;
         }
     }
 }

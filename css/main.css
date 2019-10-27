@@ -39,6 +39,10 @@
     position: fixed;
     max-width: 18%;
   }
+  .navbar ul {
+    min-width: 18%;
+    padding: 0;
+  }
 }
 @media (min-width: 992px) {
   .navbar + .container-fluid {
@@ -58,7 +62,7 @@
   border: none;
   outline: none;
   border-bottom: 1px solid #707070;
-  border-radius: 20px 20px 0px 0px;
+  text-align: center;
   font-family: Inconsolanta, Courier, monospace;
   color: white;
   font-size: 20px;
@@ -70,11 +74,13 @@
 .nav-pills > .homeButton a:focus {
   background-image: url(../img/baseline-home-24px.svg);
   background-color: rgba(146, 14, 62, 0.5);
+  border-radius: 20px 20px 0px 0px;
 }
 .nav-pills > .homeButton.active a,
 .nav-pills > .homeButton.active a:hover,
 .nav-pills > .homeButton.active a:active {
   background-color: rgba(146, 14, 62, 0.5);
+  border-radius: 20px 20px 0px 0px;
 }
 .skillsButton a {
   width: 75%;
@@ -89,7 +95,7 @@
   border: none;
   outline: none;
   border-bottom: 1px solid #707070;
-  border-radius: 20px 20px 0px 0px;
+  text-align: center;
   font-family: Inconsolanta, Courier, monospace;
   color: white;
   font-size: 20px;
@@ -101,11 +107,13 @@
 .nav-pills > .skillsButton a:focus {
   background-image: url(../img/baseline-settings-20px.svg);
   background-color: rgba(102, 217, 239, 0.5);
+  border-radius: 20px 20px 0px 0px;
 }
 .nav-pills > .skillsButton.active a,
 .nav-pills > .skillsButton.active a:hover,
 .nav-pills > .skillsButton.active a:active {
   background-color: rgba(102, 217, 239, 0.5);
+  border-radius: 20px 20px 0px 0px;
 }
 .contactButton a {
   width: 75%;
@@ -120,7 +128,7 @@
   border: none;
   outline: none;
   border-bottom: 1px solid #707070;
-  border-radius: 20px 20px 0px 0px;
+  text-align: center;
   font-family: Inconsolanta, Courier, monospace;
   color: white;
   font-size: 20px;
@@ -132,11 +140,13 @@
 .nav-pills > .contactButton a:focus {
   background-image: url(../img/baseline-mail_outline-24px.svg);
   background-color: rgba(166, 226, 46, 0.5);
+  border-radius: 20px 20px 0px 0px;
 }
 .nav-pills > .contactButton.active a,
 .nav-pills > .contactButton.active a:hover,
 .nav-pills > .contactButton.active a:active {
   background-color: rgba(166, 226, 46, 0.5);
+  border-radius: 20px 20px 0px 0px;
 }
 .aboutButton a {
   width: 75%;
@@ -151,7 +161,7 @@
   border: none;
   outline: none;
   border-bottom: 1px solid #707070;
-  border-radius: 20px 20px 0px 0px;
+  text-align: center;
   font-family: Inconsolanta, Courier, monospace;
   color: white;
   font-size: 20px;
@@ -163,11 +173,13 @@
 .nav-pills > .aboutButton a:focus {
   background-image: url(../img/baseline-list-24px.svg);
   background-color: rgba(253, 151, 31, 0.5);
+  border-radius: 20px 20px 0px 0px;
 }
 .nav-pills > .aboutButton.active a,
 .nav-pills > .aboutButton.active a:hover,
 .nav-pills > .aboutButton.active a:active {
   background-color: rgba(253, 151, 31, 0.5);
+  border-radius: 20px 20px 0px 0px;
 }
 @media (max-width: 767px) {
   .socialButton,
