@@ -20,54 +20,67 @@
     }
 }
 
-.navbarButton:extend(.buttonTheme)
+.navbarButton(@color, @image)
 {
-    border-bottom: 1px solid #707070;
-    border-radius: 20px 20px 0px 0px;
-
-    font-family: Inconsolanta, Courier, monospace;
-    color: white;
-    font-size: 20px;
-
-    transition: background-color 0.4s linear;
-}
-
-.homeButton:extend(.navbarButton all)
-{
-    background-image: url(../img/baseline-home-24px.svg);
-
-    &:hover, &:focus
+    a
     {
-        background-color: rgba(146, 14, 62, 0.5);
+        .buttonTheme();
+        
+        border-bottom: 1px solid #707070;
+        border-radius: 20px 20px 0px 0px;
+
+        font-family: Inconsolanta, Courier, monospace;
+        color: white;
+        font-size: 20px;
+
+        transition: background-color 0.4s linear;
+
+        background-image: @image;
+    }
+
+    a:hover, a:active
+    {
+        background-image: @image;
+        background-color: @color;
+    }
+
+    .nav-pills > &.active
+    {
+        a, a:hover, a:active
+        {
+            background-color: @color;
+        }
     }
 }
 
-.skillsButton:extend(.navbarButton all)
+.homeButton
 {
-    background-image: url(../img/baseline-settings-20px.svg);
-
-    &:hover, &:focus
-    {
-        background-color: rgba(102, 217, 239, 0.5);
-    }
+    @color: rgba(146, 14, 62, 0.5);
+    @image: url(../img/baseline-home-24px.svg);
+    
+    .navbarButton(@color, @image);
 }
 
-.contactButton:extend(.navbarButton all)
+.skillsButton
 {
-    background-image: url(../img/baseline-mail_outline-24px.svg);
-
-    &:hover, &:focus
-    {
-        background-color: rgba(166, 226, 46, 0.5);
-    }
+    @color: rgba(102, 217, 239, 0.5);
+    @image: url(../img/baseline-settings-20px.svg);
+    
+    .navbarButton(@color, @image);
 }
 
-.aboutButton:extend(.navbarButton all)
+.contactButton
 {
-    background-image: url(../img/baseline-list-24px.svg);
+    @color: rgba(166, 226, 46, 0.5);
+    @image: url(../img/baseline-mail_outline-24px.svg);
+    
+    .navbarButton(@color, @image);
+}
 
-    &:hover, &:focus
-    {
-        background-color: rgba(253, 151, 31, 0.5);
-    }
+.aboutButton
+{
+    @color: rgba(253, 151, 31, 0.5);
+    @image: url(../img/baseline-list-24px.svg);
+    
+    .navbarButton(@color, @image);
 }

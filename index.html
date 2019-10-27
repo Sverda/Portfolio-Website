@@ -17,10 +17,10 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollspy">
   <div class="background-image"></div>
 
-  <nav class="navbar navbar-expand-md navbar-inverse navbar-fixed-left">
+  <nav class="navbar navbar-expand-md navbar-inverse navbar-fixed-left" id="myScrollspy">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
@@ -28,12 +28,12 @@
         <span class="icon-bar"></span>
       </button>
     </div>
-    <div class="collapse navbar-collapse">
-      <button class="homeButton" onclick="pointTo('#homeSection')">Home</button>
-      <button class="skillsButton" onclick="pointTo('#skillsSection')">Skills</button>
-      <button class="contactButton" onclick="pointTo('#contactSection')">Contact</button>
-      <button class="aboutButton" onclick="pointTo('#aboutSection')">About</button>
-    </div>
+    <ul class="collapse navbar-collapse nav nav-pills nav-stacked" data-spy="affix">
+      <li class="homeButton"><a href="#homeSection">Home</a></li>
+      <li class="skillsButton"><a href="#skillsSection">Skills</a></li>
+      <li class="contactButton"><a href="#contactSection">Contact</a></li>
+      <li class="aboutButton"><a href="#aboutSection">About</a></li>
+    </ul>
   </nav>
   
   <div class="container-fluid">

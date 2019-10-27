@@ -11,12 +11,7 @@
     height: 100%;
   }
 }
-.navbarButton,
 .socialButton,
-.homeButton,
-.skillsButton,
-.contactButton,
-.aboutButton,
 .facebookButton,
 .twitterButton,
 .instagramButton,
@@ -50,44 +45,124 @@
     padding-left: 18%;
   }
 }
-.navbarButton,
-.homeButton,
-.skillsButton,
-.contactButton,
-.aboutButton {
+.homeButton a {
+  width: 75%;
+  height: 5%;
+  margin: 10px 10px 10px 12.5%;
+  cursor: pointer;
+  background: none;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: contain;
+  border: none;
+  outline: none;
   border-bottom: 1px solid #707070;
   border-radius: 20px 20px 0px 0px;
   font-family: Inconsolanta, Courier, monospace;
   color: white;
   font-size: 20px;
   transition: background-color 0.4s linear;
-}
-.homeButton {
   background-image: url(../img/baseline-home-24px.svg);
 }
-.homeButton:hover,
-.homeButton:focus {
+.homeButton a:hover,
+.homeButton a:active {
+  background-image: url(../img/baseline-home-24px.svg);
   background-color: rgba(146, 14, 62, 0.5);
 }
-.skillsButton {
+.nav-pills > .homeButton.active a,
+.nav-pills > .homeButton.active a:hover,
+.nav-pills > .homeButton.active a:active {
+  background-color: rgba(146, 14, 62, 0.5);
+}
+.skillsButton a {
+  width: 75%;
+  height: 5%;
+  margin: 10px 10px 10px 12.5%;
+  cursor: pointer;
+  background: none;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: contain;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #707070;
+  border-radius: 20px 20px 0px 0px;
+  font-family: Inconsolanta, Courier, monospace;
+  color: white;
+  font-size: 20px;
+  transition: background-color 0.4s linear;
   background-image: url(../img/baseline-settings-20px.svg);
 }
-.skillsButton:hover,
-.skillsButton:focus {
+.skillsButton a:hover,
+.skillsButton a:active {
+  background-image: url(../img/baseline-settings-20px.svg);
   background-color: rgba(102, 217, 239, 0.5);
 }
-.contactButton {
+.nav-pills > .skillsButton.active a,
+.nav-pills > .skillsButton.active a:hover,
+.nav-pills > .skillsButton.active a:active {
+  background-color: rgba(102, 217, 239, 0.5);
+}
+.contactButton a {
+  width: 75%;
+  height: 5%;
+  margin: 10px 10px 10px 12.5%;
+  cursor: pointer;
+  background: none;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: contain;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #707070;
+  border-radius: 20px 20px 0px 0px;
+  font-family: Inconsolanta, Courier, monospace;
+  color: white;
+  font-size: 20px;
+  transition: background-color 0.4s linear;
   background-image: url(../img/baseline-mail_outline-24px.svg);
 }
-.contactButton:hover,
-.contactButton:focus {
+.contactButton a:hover,
+.contactButton a:active {
+  background-image: url(../img/baseline-mail_outline-24px.svg);
   background-color: rgba(166, 226, 46, 0.5);
 }
-.aboutButton {
+.nav-pills > .contactButton.active a,
+.nav-pills > .contactButton.active a:hover,
+.nav-pills > .contactButton.active a:active {
+  background-color: rgba(166, 226, 46, 0.5);
+}
+.aboutButton a {
+  width: 75%;
+  height: 5%;
+  margin: 10px 10px 10px 12.5%;
+  cursor: pointer;
+  background: none;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: contain;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #707070;
+  border-radius: 20px 20px 0px 0px;
+  font-family: Inconsolanta, Courier, monospace;
+  color: white;
+  font-size: 20px;
+  transition: background-color 0.4s linear;
   background-image: url(../img/baseline-list-24px.svg);
 }
-.aboutButton:hover,
-.aboutButton:focus {
+.aboutButton a:hover,
+.aboutButton a:active {
+  background-image: url(../img/baseline-list-24px.svg);
+  background-color: rgba(253, 151, 31, 0.5);
+}
+.nav-pills > .aboutButton.active a,
+.nav-pills > .aboutButton.active a:hover,
+.nav-pills > .aboutButton.active a:active {
   background-color: rgba(253, 151, 31, 0.5);
 }
 @media (max-width: 767px) {
