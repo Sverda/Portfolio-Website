@@ -65,8 +65,9 @@
   transition: background-color 0.4s linear;
   background-image: url(../img/baseline-home-24px.svg);
 }
-.homeButton a:hover,
-.homeButton a:active {
+.nav-pills > .homeButton a:hover,
+.nav-pills > .homeButton a:active,
+.nav-pills > .homeButton a:focus {
   background-image: url(../img/baseline-home-24px.svg);
   background-color: rgba(146, 14, 62, 0.5);
 }
@@ -95,8 +96,9 @@
   transition: background-color 0.4s linear;
   background-image: url(../img/baseline-settings-20px.svg);
 }
-.skillsButton a:hover,
-.skillsButton a:active {
+.nav-pills > .skillsButton a:hover,
+.nav-pills > .skillsButton a:active,
+.nav-pills > .skillsButton a:focus {
   background-image: url(../img/baseline-settings-20px.svg);
   background-color: rgba(102, 217, 239, 0.5);
 }
@@ -125,8 +127,9 @@
   transition: background-color 0.4s linear;
   background-image: url(../img/baseline-mail_outline-24px.svg);
 }
-.contactButton a:hover,
-.contactButton a:active {
+.nav-pills > .contactButton a:hover,
+.nav-pills > .contactButton a:active,
+.nav-pills > .contactButton a:focus {
   background-image: url(../img/baseline-mail_outline-24px.svg);
   background-color: rgba(166, 226, 46, 0.5);
 }
@@ -155,8 +158,9 @@
   transition: background-color 0.4s linear;
   background-image: url(../img/baseline-list-24px.svg);
 }
-.aboutButton a:hover,
-.aboutButton a:active {
+.nav-pills > .aboutButton a:hover,
+.nav-pills > .aboutButton a:active,
+.nav-pills > .aboutButton a:focus {
   background-image: url(../img/baseline-list-24px.svg);
   background-color: rgba(253, 151, 31, 0.5);
 }

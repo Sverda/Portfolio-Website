@@ -38,10 +38,13 @@
         background-image: @image;
     }
 
-    a:hover, a:active
+    .nav-pills > &
     {
-        background-image: @image;
-        background-color: @color;
+        a:hover, a:active, a:focus
+        {
+            background-image: @image;
+            background-color: @color;
+        }
     }
 
     .nav-pills > &.active
