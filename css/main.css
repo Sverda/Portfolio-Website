@@ -101,7 +101,7 @@
   background-color: rgba(102, 217, 239, 0.5);
   border-radius: 20px 20px 0px 0px;
 }
-.contactButton a {
+.projectsButton a {
   width: 75%;
   height: 5%;
   margin: 10px 10px 10px 12.5%;
@@ -119,18 +119,18 @@
   color: white;
   font-size: 20px;
   transition: background-color 0.4s linear;
-  background-image: url(../img/baseline-mail_outline-24px.svg);
+  background-image: url(../img/rate-star-button.svg);
 }
-.nav-pills > .contactButton a:hover,
-.nav-pills > .contactButton a:active,
-.nav-pills > .contactButton a:focus {
-  background-image: url(../img/baseline-mail_outline-24px.svg);
+.nav-pills > .projectsButton a:hover,
+.nav-pills > .projectsButton a:active,
+.nav-pills > .projectsButton a:focus {
+  background-image: url(../img/rate-star-button.svg);
   background-color: rgba(166, 226, 46, 0.5);
   border-radius: 20px 20px 0px 0px;
 }
-.nav-pills > .contactButton.active a,
-.nav-pills > .contactButton.active a:hover,
-.nav-pills > .contactButton.active a:active {
+.nav-pills > .projectsButton.active a,
+.nav-pills > .projectsButton.active a:hover,
+.nav-pills > .projectsButton.active a:active {
   background-color: rgba(166, 226, 46, 0.5);
   border-radius: 20px 20px 0px 0px;
 }
