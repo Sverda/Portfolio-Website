@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -38,10 +39,10 @@
   
   <div class="container-fluid">
     <div class="contentContainer" id='homeSection'>
-      <h1>Hello, I'm Damian</h1>
+      <h1 data-aos="fade-right">Hello, I'm Damian</h1>
       <hr/>
-      <h2>Back-end developer</h2>
-      <section>
+      <h2 data-aos="fade-left">Back-end developer</h2>
+      <section data-aos="zoom-in">
         I'm focused on developing solid, reliable software based on timeless principles forged by world class specialists. I have an interest in refactoring and productivity techniques. 
         <br/>
         <br/>
@@ -50,10 +51,10 @@
     </div>
 
     <div class="contentContainer" id='skillsSection'>
-      <h1>My Skills</h1>
+      <h1 data-aos="fade-right">My Skills</h1>
       <hr/>
-      <h2>What I know</h2>
-      <section>
+      <h2 data-aos="fade-left">What I know</h2>
+      <section data-aos="zoom-in">
         <ul>
           <li>C#</li>
           <li>ASP.NET 4.x</li>
@@ -64,8 +65,8 @@
           <li>MS IIS</li>
         </ul>
       </section>
-      <h2>What I want to know</h2>
-      <section>
+      <h2 data-aos="fade-left">What I want to know</h2>
+      <section data-aos="zoom-in">
         <ul>
           <li>Ruby</li>
           <li>Haskell</li>
@@ -78,10 +79,10 @@
     </div>
     
     <div class="contentContainer" id='projectsSection'>
-      <h1>Projects Section Title</h1>
+      <h1 data-aos="fade-right">Projects Section Title</h1>
       <hr/>
-      <h2>Section Subtitle</h2>
-      <section>
+      <h2 data-aos="fade-left">Section Subtitle</h2>
+      <section data-aos="zoom-in">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper neque 
         eget bibendum tincidunt. Cras semper lacus vitae odio rhoncus varius. Duis 
         interdum fringilla congue. Quisque eget rutrum arcu. 
@@ -89,10 +90,10 @@
     </div>
     
     <div class="contentContainer" id="aboutSection">
-      <h1>About Section Title</h1>
+      <h1 data-aos="fade-right">About Section Title</h1>
       <hr/>
-      <h2>Section Subtitle</h2>
-      <section>
+      <h2 data-aos="fade-left">Section Subtitle</h2>
+      <section data-aos="zoom-in">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper neque 
         eget bibendum tincidunt. Cras semper lacus vitae odio rhoncus varius. Duis 
         interdum fringilla congue. Quisque eget rutrum arcu. 
@@ -117,6 +118,10 @@
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

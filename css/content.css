@@ -1,19 +1,29 @@
 .navbar {
-  background-color: rgba(50, 50, 50, 0.4);
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(90, 90, 90, 0.5);
+  background-color: rgba(50, 50, 50, 0.4);border-width: 1px;border-style: solid;border-color: rgba(90, 90, 90, 0.5);
 }
 @media (min-width: 992px) {
   .navbar {
     height: 100%;
   }
+}.navbar {
+  margin: 0;
 }
-.navbarButton,
-.homeButton,
-.skillsButton,
-.contactButton,
-.aboutButton {
+@media (min-width: 992px) {
+  .navbar {
+    position: fixed;
+    max-width: 18%;
+  }
+  .navbar ul {
+    min-width: 18%;
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  .navbar + .container-fluid {
+    padding-left: 18%;
+  }
+}
+.homeButton a {
   width: 75%;
   height: 5%;
   margin: 10px 10px 10px 12.5%;
@@ -25,45 +35,125 @@
   background-size: contain;
   border: none;
   outline: none;
-}
-.navbar {
-  margin: 0;
-}
-.navbarButton,
-.homeButton,
-.skillsButton,
-.contactButton,
-.aboutButton {
   border-bottom: 1px solid #707070;
-  border-radius: 20px 20px 0px 0px;
+  text-align: center;
   font-family: Inconsolanta, Courier, monospace;
   color: white;
   font-size: 20px;
   transition: background-color 0.4s linear;
-}
-.homeButton {
   background-image: url(../img/baseline-home-24px.svg);
 }
-.homeButton:hover {
+.nav-pills > .homeButton a:hover,
+.nav-pills > .homeButton a:active,
+.nav-pills > .homeButton a:focus {
+  background-image: url(../img/baseline-home-24px.svg);
   background-color: rgba(146, 14, 62, 0.5);
+  border-radius: 20px 20px 0px 0px;
 }
-.skillsButton {
+.nav-pills > .homeButton.active a,
+.nav-pills > .homeButton.active a:hover,
+.nav-pills > .homeButton.active a:active {
+  background-color: rgba(146, 14, 62, 0.5);
+  border-radius: 20px 20px 0px 0px;
+}
+.skillsButton a {
+  width: 75%;
+  height: 5%;
+  margin: 10px 10px 10px 12.5%;
+  cursor: pointer;
+  background: none;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: contain;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #707070;
+  text-align: center;
+  font-family: Inconsolanta, Courier, monospace;
+  color: white;
+  font-size: 20px;
+  transition: background-color 0.4s linear;
   background-image: url(../img/baseline-settings-20px.svg);
 }
-.skillsButton:hover {
+.nav-pills > .skillsButton a:hover,
+.nav-pills > .skillsButton a:active,
+.nav-pills > .skillsButton a:focus {
+  background-image: url(../img/baseline-settings-20px.svg);
   background-color: rgba(102, 217, 239, 0.5);
+  border-radius: 20px 20px 0px 0px;
 }
-.contactButton {
-  background-image: url(../img/baseline-mail_outline-24px.svg);
+.nav-pills > .skillsButton.active a,
+.nav-pills > .skillsButton.active a:hover,
+.nav-pills > .skillsButton.active a:active {
+  background-color: rgba(102, 217, 239, 0.5);
+  border-radius: 20px 20px 0px 0px;
 }
-.contactButton:hover {
+.projectsButton a {
+  width: 75%;
+  height: 5%;
+  margin: 10px 10px 10px 12.5%;
+  cursor: pointer;
+  background: none;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: contain;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #707070;
+  text-align: center;
+  font-family: Inconsolanta, Courier, monospace;
+  color: white;
+  font-size: 20px;
+  transition: background-color 0.4s linear;
+  background-image: url(../img/rate-star-button.svg);
+}
+.nav-pills > .projectsButton a:hover,
+.nav-pills > .projectsButton a:active,
+.nav-pills > .projectsButton a:focus {
+  background-image: url(../img/rate-star-button.svg);
   background-color: rgba(166, 226, 46, 0.5);
+  border-radius: 20px 20px 0px 0px;
 }
-.aboutButton {
+.nav-pills > .projectsButton.active a,
+.nav-pills > .projectsButton.active a:hover,
+.nav-pills > .projectsButton.active a:active {
+  background-color: rgba(166, 226, 46, 0.5);
+  border-radius: 20px 20px 0px 0px;
+}
+.aboutButton a {
+  width: 75%;
+  height: 5%;
+  margin: 10px 10px 10px 12.5%;
+  cursor: pointer;
+  background: none;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: contain;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #707070;
+  text-align: center;
+  font-family: Inconsolanta, Courier, monospace;
+  color: white;
+  font-size: 20px;
+  transition: background-color 0.4s linear;
   background-image: url(../img/baseline-list-24px.svg);
 }
-.aboutButton:hover {
+.nav-pills > .aboutButton a:hover,
+.nav-pills > .aboutButton a:active,
+.nav-pills > .aboutButton a:focus {
+  background-image: url(../img/baseline-list-24px.svg);
   background-color: rgba(253, 151, 31, 0.5);
+  border-radius: 20px 20px 0px 0px;
+}
+.nav-pills > .aboutButton.active a,
+.nav-pills > .aboutButton.active a:hover,
+.nav-pills > .aboutButton.active a:active {
+  background-color: rgba(253, 151, 31, 0.5);
+  border-radius: 20px 20px 0px 0px;
 }
 .contentContainer {
   background-color: rgba(0, 0, 0, 0.5);
