@@ -29,21 +29,24 @@ body
 {
     width: 100%;
     height: 100%;
-    content: "";
     position: fixed;
-    left: 0;
-    right: 0;
     z-index: -1;
     display: block;
-    
-    background-image: url("../img/background-code.png");
+    content: "";
 
     @blurRange: 7px;
-    -webkit-filter: blur(@blurRange);
-    -moz-filter: blur(@blurRange);
-    -o-filter: blur(@blurRange);
-    -ms-filter: blur(@blurRange);
-    filter: blur(@blurRange);
+    -webkit-backdrop-filter: blur(@blurRange); /* apply the blur */
+    backdrop-filter: blur(@blurRange); 
+}
+
+.background-image
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    
+    background-image: url("../img/background-code.png");
     
     background-repeat: no-repeat;
     background-size: cover;
