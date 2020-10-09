@@ -69,7 +69,28 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
     transition: 0.7s;
     color: #fff;
+    @media (min-width: 768px)
+    {
+        white-space: nowrap;
+    }
+}
+
+.longText
+{
+    @media (max-width: 768px)
+    {
+        display: none;
+    }
+}
+
+.shortText
+{
+    @media (min-width: 768px)
+    {
+        display: none;
+    }
 }
