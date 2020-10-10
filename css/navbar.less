@@ -2,26 +2,21 @@
 
 .navbar:extend(.barTheme)
 {
-    @offsite: 18%;
+    @offsite: 20vw;
     
     margin: 0;
     @media (min-width: 992px) 
     {
-        position: fixed;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
         max-width: @offsite;
+        height: 100vh;
 
         ul
         {
             min-width: @offsite;
             padding: 0;
-        }
-    }
-    
-    & + .container-fluid 
-    {
-        @media (min-width: 992px)
-        {
-            padding-left: @offsite;
         }
     }
 }

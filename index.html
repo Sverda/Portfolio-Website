@@ -21,122 +21,130 @@
 <body data-spy="scroll" data-target="#myScrollspy">
   <div class="background-image"></div>
 
-  <nav class="navbar navbar-expand-md navbar-inverse navbar-fixed-left" id="myScrollspy">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <ul class="collapse navbar-collapse nav nav-pills nav-stacked" data-spy="affix">
-      <li class="homeButton"><a href="#homeSection">Home</a></li>
-      <li class="skillsButton"><a href="#skillsSection">Skills</a></li>
-      <li class="projectsButton"><a href="#projectsSection">Projects</a></li>
-      <li class="aboutButton"><a href="#aboutSection">About</a></li>
-    </ul>
-  </nav>
-  
-  <div class="container-fluid">
-    <div class="contentContainer startSection" id='homeSection'>
-      <h1 data-aos="fade-right">Hello, I'm Damian</h1>
+  <header>
+    <div class="contentContainer" id='homeSection'>
+      <h1>Hello, I'm Damian</h1>
       <hr/>
-      <h2 data-aos="fade-left">Back-end developer</h2>
-      <section data-aos="zoom-in">
+      <h2>Back-end developer</h2>
+      <section>
         I'm focused on developing solid, reliable software based on timeless principles forged by world class specialists. I have an interest in refactoring and productivity techniques. 
         <br/>
         <br/>
         If you are interested in my person, please, check out sections below. 
       </section>
     </div>
+  </header>
+  
+  <main>
+    <nav class="navbar navbar-expand-md navbar-inverse navbar-fixed-left" id="myScrollspy">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <ul class="collapse navbar-collapse nav nav-pills nav-stacked" data-spy="affix">
+        <li class="homeButton"><a href="#homeSection">Home</a></li>
+        <li class="skillsButton"><a href="#skillsSection">Skills</a></li>
+        <li class="projectsButton"><a href="#projectsSection">Projects</a></li>
+        <li class="aboutButton"><a href="#aboutSection">About</a></li>
+      </ul>
+    </nav>
 
-    <div class="contentContainer" id='skillsSection'>
-      <h1 data-aos="fade-right">My Skills</h1>
-      <hr/>
-      <section data-aos="zoom-in">
-        <div id="first" class="cardsContainer">
-          <div class="card">
-            <div class="cardContent">
-              <div class="cardFace">
-                <span class="cardText">C#</span>
+    <div class="container-fluid">
+      <div class="contentContainer" id='skillsSection'>
+        <h1 data-aos="fade-right">My Skills</h1>
+        <hr/>
+        <section data-aos="zoom-in">
+          <div id="first" class="cardsContainer">
+            <div class="card">
+              <div class="cardContent">
+                <div class="cardFace">
+                  <span class="cardText">C#</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="cardContent">
+                <div class="cardFace">
+                  <span class="cardText longText">ASP.NET</span>
+                  <span class="cardText shortText">ASP. NET</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="cardContent">
+                <div class="cardFace">
+                  <span class="cardText">.NET Core</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="cardContent">
-              <div class="cardFace">
-                <span class="cardText longText">ASP.NET</span>
-                <span class="cardText shortText">ASP. NET</span>
+          <div id="second" class="cardsContainer">
+            <div class="card">
+              <div class="cardContent">
+                <div class="cardFace">
+                  <span class="cardText">MS SQL</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="cardContent">
+                <div class="cardFace">
+                  <span class="cardText longText">Entity Framework</span>
+                  <span class="cardText shortText">EF</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="cardContent">
+                <div class="cardFace">
+                  <span class="cardText">NUnit</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="cardContent">
-              <div class="cardFace">
-                <span class="cardText">.NET Core</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="second" class="cardsContainer">
-          <div class="card">
-            <div class="cardContent">
-              <div class="cardFace">
-                <span class="cardText">MS SQL</span>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="cardContent">
-              <div class="cardFace">
-                <span class="cardText longText">Entity Framework</span>
-                <span class="cardText shortText">EF</span>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="cardContent">
-              <div class="cardFace">
-                <span class="cardText">NUnit</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    
-    <div class="contentContainer" id='projectsSection'>
-      <h1 data-aos="fade-right">Projects Section Title</h1>
-      <hr/>
-      <h2 data-aos="fade-left">Section Subtitle</h2>
-      <section data-aos="zoom-in">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper neque 
-        eget bibendum tincidunt. Cras semper lacus vitae odio rhoncus varius. Duis 
-        interdum fringilla congue. Quisque eget rutrum arcu. 
-      </section>
-    </div>
-    
-    <div class="contentContainer" id="aboutSection">
-      <h1 data-aos="fade-right">About Section Title</h1>
-      <hr/>
-      <h2 data-aos="fade-left">Section Subtitle</h2>
-      <section data-aos="zoom-in">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper neque 
-        eget bibendum tincidunt. Cras semper lacus vitae odio rhoncus varius. Duis 
-        interdum fringilla congue. Quisque eget rutrum arcu. 
-      </section>
-    </div>
+        </section>
+      </div>
+      
+      <div class="contentContainer" id='projectsSection'>
+        <h1 data-aos="fade-right">Projects Section Title</h1>
+        <hr/>
+        <h2 data-aos="fade-left">Section Subtitle</h2>
+        <section data-aos="zoom-in">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper neque 
+          eget bibendum tincidunt. Cras semper lacus vitae odio rhoncus varius. Duis 
+          interdum fringilla congue. Quisque eget rutrum arcu. 
+        </section>
+      </div>
+      
+      <div class="contentContainer" id="aboutSection">
+        <h1 data-aos="fade-right">About Section Title</h1>
+        <hr/>
+        <h2 data-aos="fade-left">Section Subtitle</h2>
+        <section data-aos="zoom-in">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper neque 
+          eget bibendum tincidunt. Cras semper lacus vitae odio rhoncus varius. Duis 
+          interdum fringilla congue. Quisque eget rutrum arcu. 
+        </section>
+      </div>
 
-    <div class="contentContainer">
-      <button class="facebookButton"></button>
-      <button class="twitterButton"></button>
-      <button class="instagramButton"></button>
-      <button class="linkedinButton"></button>
-      <button class="githubButton"></button>
-      <button class="youtubeButton"></button>
-      <!-- <button class="shareButton"></button> -->
+      <div class="contentContainer">
+        <button class="facebookButton"></button>
+        <button class="twitterButton"></button>
+        <button class="instagramButton"></button>
+        <button class="linkedinButton"></button>
+        <button class="githubButton"></button>
+        <button class="youtubeButton"></button>
+        <!-- <button class="shareButton"></button> -->
+      </div>
     </div>
-  </div>
+  </main>
+
+  <footer>
+    &copy;2020 Damian Ubowski
+  </footer>
   
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="js/vendor/jquery-3.4.1.min.js"></script>
