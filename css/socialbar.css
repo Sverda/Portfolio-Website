@@ -1,14 +1,3 @@
-.socialbar {
-  background-color: rgba(50, 50, 50, 0.4);
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(90, 90, 90, 0.5);
-}
-@media (min-width: 992px) {
-  .socialbar {
-    height: 100%;
-  }
-}
 .socialButton,
 .facebookButton,
 .twitterButton,
@@ -17,17 +6,7 @@
 .githubButton,
 .youtubeButton,
 .shareButton {
-  width: 75%;
-  height: 5%;
-  margin: 10px 10px 10px 12.5%;
-  cursor: pointer;
-  background: none;
-  background-image: url();
-  background-repeat: no-repeat;
-  background-position: 5% 50%;
-  background-size: contain;
-  border: none;
-  outline: none;
+  width: 75%;height: 5%;margin: 10px 10px 10px 12.5%;cursor: pointer;background: none;background-image: url();background-repeat: no-repeat;background-position: 5% 50%;background-size: contain;border: none;outline: none;
 }
 @media (max-width: 767px) {
   .socialButton,
@@ -38,8 +17,8 @@
   .githubButton,
   .youtubeButton,
   .shareButton {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
   }
 }
 @media (min-width: 768px) {
@@ -51,8 +30,8 @@
   .githubButton,
   .youtubeButton,
   .shareButton {
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
   }
 }
 .facebookButton {
