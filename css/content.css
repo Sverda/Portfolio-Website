@@ -10,17 +10,15 @@
 }
 @media (min-width: 992px) {
   .navbar {
-    position: fixed;
-    max-width: 18%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    max-width: 20vw;
+    height: 100vh;
   }
   .navbar ul {
-    min-width: 18%;
+    min-width: 20vw;
     padding: 0;
-  }
-}
-@media (min-width: 992px) {
-  .navbar + .container-fluid {
-    padding-left: 18%;
   }
 }
 .homeButton a {
@@ -156,6 +154,7 @@
   border-radius: 20px 20px 0px 0px;
 }
 .contentContainer {
+  position: relative;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   border-width: 0px;
