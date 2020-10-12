@@ -1,94 +1,90 @@
 @import (reference) url(basebar.less);
 
-.navbar:extend(.barTheme)
-{
-    @offsite: 20vw;
-    
-    margin: 0;
-    @media (min-width: 992px) 
-    {
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0;
-        max-width: @offsite;
-        height: 100vh;
+.navbar:extend(.barTheme) {
+	@offsite: 20vw;
 
-        ul
-        {
-            min-width: @offsite;
-            padding: 0;
-        }
-    }
+	margin: 0;
+	padding-bottom: 2vh;
+	align-items: flex-end;
+
+	@media (min-width: 992px) {
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0;
+		max-width: @offsite;
+		height: 100vh;
+
+		ul {
+			min-width: @offsite;
+			padding: 0;
+		}
+	}
 }
 
-.navbarButton(@color, @image)
-{
-    a
-    {
-        .buttonTheme();
-        
-        border-bottom: 1px solid #707070;
+.navbarButton(@color, @image) {
+	a {
+		.buttonTheme();
 
-        text-align: center;
-        font-family: Inconsolanta, Courier, monospace;
-        color: white;
-        font-size: 20px;
+		border-bottom: 1px solid #707070;
 
-        transition: background-color 0.4s linear;
+		text-align: center;
+		font-family: Inconsolanta, Courier, monospace;
+		color: white;
+		font-size: 20px;
 
-        background-image: @image;
-    }
+		transition: background-color 0.4s linear;
 
-    .nav-pills > &
-    {
-        a:hover, a:active, a:focus
-        {
-            background-image: @image;
-            background-color: @color;
-            
-            border-radius: 20px 20px 0px 0px;
-        }
-    }
+		background-image: @image;
+	}
 
-    .nav-pills > &.active
-    {
-        a, a:hover, a:active
-        {
-            background-color: @color;
-            
-            border-radius: 20px 20px 0px 0px;
-        }
-    }
+	.nav-pills>& {
+
+		a:hover,
+		a:active,
+		a:focus {
+			background-image: @image;
+			background-color: @color;
+
+			border-radius: 20px 20px 0px 0px;
+		}
+	}
+
+	.nav-pills>&.active {
+
+		a,
+		a:hover,
+		a:active {
+			background-color: @color;
+
+			border-radius: 20px 20px 0px 0px;
+		}
+	}
 }
 
-.homeButton
-{
-    @color: rgba(146, 14, 62, 0.5);
-    @image: url(../img/baseline-home-24px.svg);
-    
-    .navbarButton(@color, @image);
+.homeButton {
+	@color: rgba(146, 14, 62, 0.5);
+	@image: url(../img/baseline-home-24px.svg);
+
+	.navbarButton(@color, @image);
 }
 
-.skillsButton
-{
-    @color: rgba(102, 217, 239, 0.5);
-    @image: url(../img/baseline-settings-20px.svg);
-    
-    .navbarButton(@color, @image);
+.skillsButton {
+	@color: rgba(102, 217, 239, 0.5);
+	@image: url(../img/baseline-settings-20px.svg);
+
+	.navbarButton(@color, @image);
 }
 
-.projectsButton
-{
-    @color: rgba(166, 226, 46, 0.5);
-    @image: url(../img/rate-star-button.svg);
-    
-    .navbarButton(@color, @image);
+.projectsButton {
+	@color: rgba(166, 226, 46, 0.5);
+	@image: url(../img/rate-star-button.svg);
+
+	.navbarButton(@color, @image);
 }
 
-.aboutButton
-{
-    @color: rgba(253, 151, 31, 0.5);
-    @image: url(../img/baseline-list-24px.svg);
-    
-    .navbarButton(@color, @image);
+.aboutButton {
+	@color: rgba(253, 151, 31, 0.5);
+	@image: url(../img/baseline-list-24px.svg);
+
+	.navbarButton(@color, @image);
 }

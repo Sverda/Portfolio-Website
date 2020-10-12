@@ -1,154 +1,169 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="pl-pl">
+	<head>
+		<meta charset="utf-8" />
+		<title>Damian Ubowski's Portfolio</title>
+		<meta name="description" content="Damian Ubowski's Portfolio" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Damian Ubowski's Portfolio</title>
-  <meta name="description" content="Damian Ubowski's Portfolio">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="manifest" href="site.webmanifest" />
+		<link rel="apple-touch-icon" href="icon.png" />
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="css/main.css" />
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="css/main.css">
+		<meta name="theme-color" content="#fafafa" />
+	</head>
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+	<body data-spy="scroll" data-target="#myScrollspy">
+		<div class="background-image"></div>
 
-<body data-spy="scroll" data-target="#myScrollspy">
-  <div class="background-image"></div>
+		<header>
+			<div class="contentContainer" id="homeSection">
+				<h1>Damian Ubowski</h1>
+				<hr />
+				<h2>Software Developer</h2>
+				<a class="bellowButton" href="#aboutSection"></a>
+			</div>
+		</header>
 
-  <header>
-    <div class="contentContainer" id='homeSection'>
-      <h1>Damian Ubowski</h1>
-      <hr/>
-      <h2>Software Developer</h2>
-      <a class="bellowButton" href="#aboutSection"></a>
-    </div>
-  </header>
-  
-  <main>
-    <nav class="navbar navbar-expand-md navbar-inverse navbar-fixed-left" id="myScrollspy">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <ul class="collapse navbar-collapse nav nav-pills nav-stacked" data-spy="affix">
-        <li class="homeButton"><a href="#homeSection">Home</a></li>
-        <li class="aboutButton"><a href="#aboutSection">About</a></li>
-        <li class="skillsButton"><a href="#skillsSection">Skills</a></li>
-        <li class="projectsButton"><a href="#projectsSection">Projects</a></li>
-      </ul>
-    </nav>
+		<main>
+			<nav class="navbar navbar-dark nav-pills" id="myScrollspy">
+				<div class="collapse navbar-collapse" id="myNavigation">
+					<ul class="navbar-nav nav flex-column" data-spy="affix">
+						<li class="homeButton nav-item">
+							<a class="nav-link" href="#homeSection">Home</a>
+						</li>
+						<li class="aboutButton nav-item">
+							<a class="nav-link" href="#aboutSection">About</a>
+						</li>
+						<li class="skillsButton nav-item">
+							<a class="nav-link" href="#skillsSection">Skills</a>
+						</li>
+						<li class="projectsButton nav-item">
+							<a class="nav-link" href="#projectsSection">Projects</a>
+						</li>
+					</ul>
+				</div>
 
-    <div class="container-fluid">
-      <div class="contentContainer" id="aboutSection">
-        <h2 data-aos="fade-left">Hello, I'm Damian</h2>
-        <section data-aos="zoom-in">
-          I'm focused on developing solid, reliable software based on timeless principles forged by world class specialists. I have an interest in refactoring and productivity techniques. 
-          <br/>
-          <br/>
-          If you are interested in my person, please, check out sections below. 
-        </section>
-      </div>
+				<button
+					type="button"
+					class="navbar-toggler"
+					data-toggle="collapse"
+					data-target="#myNavigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</nav>
 
-      <div class="contentContainer" id='skillsSection'>
-        <h1 data-aos="fade-right">My Skills</h1>
-        <hr/>
-        <section data-aos="zoom-in">
-          <div id="first" class="cardsContainer">
-            <div class="card">
-              <div class="cardContent">
-                <div class="cardFace">
-                  <span class="cardText">C#</span>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="cardContent">
-                <div class="cardFace">
-                  <span class="cardText longText">ASP.NET</span>
-                  <span class="cardText shortText">ASP. NET</span>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="cardContent">
-                <div class="cardFace">
-                  <span class="cardText">.NET Core</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="second" class="cardsContainer">
-            <div class="card">
-              <div class="cardContent">
-                <div class="cardFace">
-                  <span class="cardText">MS SQL</span>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="cardContent">
-                <div class="cardFace">
-                  <span class="cardText longText">Entity Framework</span>
-                  <span class="cardText shortText">EF</span>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="cardContent">
-                <div class="cardFace">
-                  <span class="cardText">NUnit</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      
-      <div class="contentContainer" id='projectsSection'>
-        <h1 data-aos="fade-right">Projects Section Title</h1>
-        <hr/>
-        <h2 data-aos="fade-left">Section Subtitle</h2>
-        <section data-aos="zoom-in">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper neque 
-          eget bibendum tincidunt. Cras semper lacus vitae odio rhoncus varius. Duis 
-          interdum fringilla congue. Quisque eget rutrum arcu. 
-        </section>
-      </div>
+			<div class="container-fluid">
+				<div class="contentContainer" id="aboutSection">
+					<h2 data-aos="fade-left">Hello, I'm Damian</h2>
+					<section data-aos="zoom-in">
+						I'm focused on developing solid, reliable software based on timeless
+						principles forged by world class specialists. I have an interest in
+						refactoring and productivity techniques.
+						<br />
+						<br />
+						If you are interested in my person, please, check out sections
+						below.
+					</section>
+				</div>
 
-      <div class="contentContainer">
-        <button class="facebookButton"></button>
-        <button class="twitterButton"></button>
-        <button class="instagramButton"></button>
-        <button class="linkedinButton"></button>
-        <button class="githubButton"></button>
-        <button class="youtubeButton"></button>
-        <!-- <button class="shareButton"></button> -->
-      </div>
-    </div>
-  </main>
+				<div class="contentContainer" id="skillsSection">
+					<h1 data-aos="fade-right">My Skills</h1>
+					<hr />
+					<section data-aos="zoom-in">
+						<div id="first" class="cardsContainer">
+							<div class="card">
+								<div class="cardContent">
+									<div class="cardFace">
+										<span class="cardText">C#</span>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="cardContent">
+									<div class="cardFace">
+										<span class="cardText longText">ASP.NET</span>
+										<span class="cardText shortText">ASP. NET</span>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="cardContent">
+									<div class="cardFace">
+										<span class="cardText">.NET Core</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="second" class="cardsContainer">
+							<div class="card">
+								<div class="cardContent">
+									<div class="cardFace">
+										<span class="cardText">MS SQL</span>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="cardContent">
+									<div class="cardFace">
+										<span class="cardText longText">Entity Framework</span>
+										<span class="cardText shortText">EF</span>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="cardContent">
+									<div class="cardFace">
+										<span class="cardText">NUnit</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
 
-  <footer>
-    &copy;2020 Damian Ubowski
-  </footer>
-  
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="js/vendor/jquery-3.4.1.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
+				<div class="contentContainer" id="projectsSection">
+					<h1 data-aos="fade-right">Projects Section Title</h1>
+					<hr />
+					<h2 data-aos="fade-left">Section Subtitle</h2>
+					<section data-aos="zoom-in">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+						semper neque eget bibendum tincidunt. Cras semper lacus vitae odio
+						rhoncus varius. Duis interdum fringilla congue. Quisque eget rutrum
+						arcu.
+					</section>
+				</div>
 
+				<div class="contentContainer">
+					<button class="facebookButton"></button>
+					<button class="twitterButton"></button>
+					<button class="instagramButton"></button>
+					<button class="linkedinButton"></button>
+					<button class="githubButton"></button>
+					<button class="youtubeButton"></button>
+					<!-- <button class="shareButton"></button> -->
+				</div>
+			</div>
+		</main>
+
+		<footer>&copy;2020 Damian Ubowski</footer>
+
+		<script src="js/vendor/modernizr-3.7.1.min.js"></script>
+		<script src="js/vendor/jquery-3.4.1.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
 </html>

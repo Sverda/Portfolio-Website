@@ -4,9 +4,9 @@
     "less": "lessc: css/main.less css/main.css"
   },
   "devDependencies": {
-    "lite-server": "^2.5.3"
+    "lite-server": "^2.5.4"
   },
   "dependencies": {
-    "bootstrap": "^3.4.1"
+    "bootstrap": "^4.5.2"
   }
 }

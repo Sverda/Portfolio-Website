@@ -1,4 +1,3 @@
-function pointTo(anchor)
-{
-    window.location.href = anchor;
+function pointTo(anchor) {
+	window.location.href = anchor;
 }

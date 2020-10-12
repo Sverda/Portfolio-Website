@@ -17,6 +17,8 @@
 }
 .navbar {
   margin: 0;
+  padding-bottom: 2vh;
+  align-items: flex-end;
 }
 @media (min-width: 992px) {
   .navbar {
