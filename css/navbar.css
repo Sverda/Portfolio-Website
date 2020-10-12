@@ -43,16 +43,16 @@
   transition: background-color 0.4s linear;
   background-image: url(../img/baseline-home-24px.svg);
 }
-.nav-pills > .homeButton a:hover,
-.nav-pills > .homeButton a:active,
-.nav-pills > .homeButton a:focus {
+.homeButton a.nav-link:hover,
+.homeButton a.nav-link:active,
+.homeButton a.nav-link:focus {
   background-image: url(../img/baseline-home-24px.svg);
   background-color: rgba(146, 14, 62, 0.5);
   border-radius: 20px 20px 0px 0px;
 }
-.nav-pills > .homeButton.active a,
-.nav-pills > .homeButton.active a:hover,
-.nav-pills > .homeButton.active a:active {
+.homeButton a.nav-link.active,
+.homeButton a.nav-link.active:hover,
+.homeButton a.nav-link.active:active {
   background-color: rgba(146, 14, 62, 0.5);
   border-radius: 20px 20px 0px 0px;
 }
@@ -76,16 +76,16 @@
   transition: background-color 0.4s linear;
   background-image: url(../img/baseline-settings-20px.svg);
 }
-.nav-pills > .skillsButton a:hover,
-.nav-pills > .skillsButton a:active,
-.nav-pills > .skillsButton a:focus {
+.skillsButton a.nav-link:hover,
+.skillsButton a.nav-link:active,
+.skillsButton a.nav-link:focus {
   background-image: url(../img/baseline-settings-20px.svg);
   background-color: rgba(102, 217, 239, 0.5);
   border-radius: 20px 20px 0px 0px;
 }
-.nav-pills > .skillsButton.active a,
-.nav-pills > .skillsButton.active a:hover,
-.nav-pills > .skillsButton.active a:active {
+.skillsButton a.nav-link.active,
+.skillsButton a.nav-link.active:hover,
+.skillsButton a.nav-link.active:active {
   background-color: rgba(102, 217, 239, 0.5);
   border-radius: 20px 20px 0px 0px;
 }
@@ -109,16 +109,16 @@
   transition: background-color 0.4s linear;
   background-image: url(../img/rate-star-button.svg);
 }
-.nav-pills > .projectsButton a:hover,
-.nav-pills > .projectsButton a:active,
-.nav-pills > .projectsButton a:focus {
+.projectsButton a.nav-link:hover,
+.projectsButton a.nav-link:active,
+.projectsButton a.nav-link:focus {
   background-image: url(../img/rate-star-button.svg);
   background-color: rgba(166, 226, 46, 0.5);
   border-radius: 20px 20px 0px 0px;
 }
-.nav-pills > .projectsButton.active a,
-.nav-pills > .projectsButton.active a:hover,
-.nav-pills > .projectsButton.active a:active {
+.projectsButton a.nav-link.active,
+.projectsButton a.nav-link.active:hover,
+.projectsButton a.nav-link.active:active {
   background-color: rgba(166, 226, 46, 0.5);
   border-radius: 20px 20px 0px 0px;
 }
@@ -142,16 +142,16 @@
   transition: background-color 0.4s linear;
   background-image: url(../img/baseline-list-24px.svg);
 }
-.nav-pills > .aboutButton a:hover,
-.nav-pills > .aboutButton a:active,
-.nav-pills > .aboutButton a:focus {
+.aboutButton a.nav-link:hover,
+.aboutButton a.nav-link:active,
+.aboutButton a.nav-link:focus {
   background-image: url(../img/baseline-list-24px.svg);
   background-color: rgba(253, 151, 31, 0.5);
   border-radius: 20px 20px 0px 0px;
 }
-.nav-pills > .aboutButton.active a,
-.nav-pills > .aboutButton.active a:hover,
-.nav-pills > .aboutButton.active a:active {
+.aboutButton a.nav-link.active,
+.aboutButton a.nav-link.active:hover,
+.aboutButton a.nav-link.active:active {
   background-color: rgba(253, 151, 31, 0.5);
   border-radius: 20px 20px 0px 0px;
 }

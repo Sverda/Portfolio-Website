@@ -37,11 +37,11 @@
 		background-image: @image;
 	}
 
-	.nav-pills>& {
+	a.nav-link {
 
-		a:hover,
-		a:active,
-		a:focus {
+		&:hover,
+		&:active,
+		&:focus {
 			background-image: @image;
 			background-color: @color;
 
@@ -49,11 +49,11 @@
 		}
 	}
 
-	.nav-pills>&.active {
+	a.nav-link.active {
 
-		a,
-		a:hover,
-		a:active {
+		&,
+		&:hover,
+		&:active {
 			background-color: @color;
 
 			border-radius: 20px 20px 0px 0px;
