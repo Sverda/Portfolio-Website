@@ -2,33 +2,31 @@
 @secondaryColor: fade(rgb(50, 50, 50), 40%);
 @tertiaryColor: fade(rgb(90, 90, 90), 50%);
 
-.barTheme
-{
-    background-color: @secondaryColor;
-    border-width: 1px;
-    border-style: solid;
-    border-color: @tertiaryColor;
+.barTheme {
+	background-color: @secondaryColor;
+	border-width: 1px;
+	border-style: solid;
+	border-color: @tertiaryColor;
 
-    @media (min-width: 992px) {
-        height: 100%;
-    }
+	@media (min-width: 992px) {
+		height: 100%;
+	}
 }
 
-.buttonTheme
-{
-    @width: 75%;
-    width: @width;
-    height: 5%;
-    @center: 50%-@width/2;
-    margin: 10px 10px 10px @center;
+.buttonTheme {
+	@width: 75%;
+	width: @width;
+	height: 5%;
+	@center: 50%-@width/2;
+	margin: 10px 10px 10px @center;
 
-    cursor: pointer;
-    background: none;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-position: 5% 50%;
-    background-size: contain;
-    
-    border: none;
-    outline: none;
+	cursor: pointer;
+	background: none;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: 5% 50%;
+	background-size: contain;
+
+	border: none;
+	outline: none;
 }
