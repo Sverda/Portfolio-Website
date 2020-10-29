@@ -1,12 +1,25 @@
 {
-  "scripts": {
-    "start": "lite-server",
-    "less": "lessc: css/main.less css/main.css"
-  },
-  "devDependencies": {
-    "lite-server": "^2.5.4"
-  },
-  "dependencies": {
-    "bootstrap": "^4.5.2"
-  }
+	"scripts": {
+		"start": "webpack-dev-server --config ./webpack.config.js",
+		"build": "webpack",
+		"build:prod": "webpack --mode production"
+	},
+	"devDependencies": {
+		"css-loader": "^5.0.0",
+		"file-loader": "^6.2.0",
+		"html-webpack-plugin": "^4.5.0",
+		"less": "^3.12.2",
+		"less-loader": "^7.0.2",
+		"style-loader": "^2.0.0",
+		"svg-url-loader": "^6.0.0",
+		"webpack": "^5.3.1",
+		"webpack-cli": "^4.1.0",
+		"webpack-dev-server": "^3.11.0"
+	},
+	"dependencies": {
+		"bootstrap": "^4.5.2",
+		"jquery": "^1.9.1",
+		"lodash": "^4.17.20",
+		"popper.js": "^1.16.1"
+	}
 }
