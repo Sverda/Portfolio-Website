@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="46"
+   height="75"
+   viewBox="0 0 12.170835 19.84375"
+   version="1.1"
+   id="svg2864"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <defs
+     id="defs2858" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#050505"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="78.585441"
+     inkscape:cy="55.554663"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     showborder="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:snap-intersection-paths="false"
+     inkscape:object-paths="false" />
+  <metadata
+     id="metadata2861">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Perpetua Titling MT';-inkscape-font-specification:'Perpetua Titling MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:0.717122;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.582083;stroke-miterlimit:4;stroke-dasharray:none"
+       x="5.0781212"
+       y="7.4501338"
+       id="text3480"><tspan
+         sodipodi:role="line"
+         x="5.0781212"
+         y="7.4501338"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Perpetua Titling MT';-inkscape-font-specification:'Perpetua Titling MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.582083;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan3482" /></text>
+    <path
+       id="path3486"
+       style="opacity:0.717122;fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.582083;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 6.3901429,13.229883 c 0.314719,0.0221 0.645504,0.0334 0.993177,0.0334 L 7.4835459,0.76843575" />
+    <path
+       id="path3499"
+       style="opacity:0.717122;fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.582083;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1.0737154,0.83273575 C 1.1453954,6.4381958 0.56401344,11.821173 4.6794209,13.099513" />
+    <path
+       id="path3490"
+       style="opacity:0.717122;fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.582083;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 8.4689209,6.6814058 c 0.992506,0.23132 1.9028531,0.63018 2.1956971,1.31686 C 12.222245,11.650733 5.2536339,18.610613 5.2536339,18.610613 v 0 -12.2451472 c 0,0 0.573157,-0.0123 1.349722,0.0462" />
+  </g>
+</svg>
