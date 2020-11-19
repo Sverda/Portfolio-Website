@@ -33,7 +33,11 @@
 		}
 
 		ul.navbar-nav {
-			@media (max-width: 991px) {
+			@media (max-width: 695px) {
+				width: 70vw;
+			}
+
+			@media (min-width: 696px) and (max-width: 991px) {
 				width: 80vw;
 			}
 
@@ -103,8 +107,8 @@
 
 .aboutButton {
 	@color: rgba(253, 151, 31, 0.5);
-	@image: url(../img/baseline-list-24px.svg);
-	@hoverImage: url(../img/baseline-list-24px-hover.svg);
+	@image: url(../img/user-tie-solid.svg);
+	@hoverImage: url(../img/user-tie-solid-hover.svg);
 
 	.navbarButton(@color, @image, @hoverImage);
 }
