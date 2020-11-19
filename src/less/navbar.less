@@ -26,10 +26,23 @@
 	}
 
 	div.navbar-collapse {
-		display: flex;
+		@media (min-width: 992px) {
+			display: flex;
+		}
 
 		&.collapse:not(.show) {
-			display: none;
+			ul {
+				min-width: 0;
+
+				a {
+					width: 35px;
+					height: 35px;
+
+					span.navText {
+						display: none;
+					}
+				}
+			}
 		}
 
 		ul.navbar-nav {
@@ -48,7 +61,7 @@
 	}
 }
 
-.navbarButton(@color, @image, @hoverImage) {
+.navbarButton(@image, @hoverImage) {
 	a {
 		.buttonTheme();
 
@@ -82,35 +95,31 @@
 }
 
 .homeButton {
-	@color: rgba(146, 14, 62, 0.5);
 	@image: url(../img/baseline-home-24px.svg);
 	@hoverImage: url(../img/baseline-home-24px-hover.svg);
 
-	.navbarButton(@color, @image, @hoverImage);
+	.navbarButton(@image, @hoverImage);
 }
 
 .skillsButton {
-	@color: rgba(102, 217, 239, 0.5);
 	@image: url(../img/baseline-settings-20px.svg);
 	@hoverImage: url(../img/baseline-settings-20px-hover.svg);
 
-	.navbarButton(@color, @image, @hoverImage);
+	.navbarButton(@image, @hoverImage);
 }
 
 .projectsButton {
-	@color: rgba(166, 226, 46, 0.5);
 	@image: url(../img/rate-star-button.svg);
 	@hoverImage: url(../img/rate-star-button-hover.svg);
 
-	.navbarButton(@color, @image, @hoverImage);
+	.navbarButton(@image, @hoverImage);
 }
 
 .aboutButton {
-	@color: rgba(253, 151, 31, 0.5);
 	@image: url(../img/user-tie-solid.svg);
 	@hoverImage: url(../img/user-tie-solid-hover.svg);
 
-	.navbarButton(@color, @image, @hoverImage);
+	.navbarButton(@image, @hoverImage);
 }
 
 .navbar-toggler.x-animation {
