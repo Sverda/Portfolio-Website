@@ -44,18 +44,14 @@
 	}
 }
 
-.navbarButton(@color, @image) {
+.navbarButton(@color, @image, @hoverImage) {
 	a {
 		.buttonTheme();
-
-		border-bottom: 1px solid #707070;
 
 		text-align: center;
 		font-family: Inconsolanta, Courier, monospace;
 		color: white;
 		font-size: 20px;
-
-		transition: background-color 0.4s linear;
 
 		background-image: @image;
 	}
@@ -64,10 +60,9 @@
 		&:hover,
 		&:active,
 		&:focus {
-			background-image: @image;
-			background-color: @color;
-
-			border-radius: 20px 20px 0px 0px;
+			color: white;
+			background-image: @hoverImage;
+			background-color: unset;
 		}
 	}
 
@@ -75,9 +70,9 @@
 		&,
 		&:hover,
 		&:active {
-			background-color: @color;
-
-			border-radius: 20px 20px 0px 0px;
+			color: white;
+			background-image: @hoverImage;
+			background-color: unset;
 		}
 	}
 }
@@ -85,29 +80,33 @@
 .homeButton {
 	@color: rgba(146, 14, 62, 0.5);
 	@image: url(../img/baseline-home-24px.svg);
+	@hoverImage: url(../img/baseline-home-24px-hover.svg);
 
-	.navbarButton(@color, @image);
+	.navbarButton(@color, @image, @hoverImage);
 }
 
 .skillsButton {
 	@color: rgba(102, 217, 239, 0.5);
 	@image: url(../img/baseline-settings-20px.svg);
+	@hoverImage: url(../img/baseline-settings-20px-hover.svg);
 
-	.navbarButton(@color, @image);
+	.navbarButton(@color, @image, @hoverImage);
 }
 
 .projectsButton {
 	@color: rgba(166, 226, 46, 0.5);
 	@image: url(../img/rate-star-button.svg);
+	@hoverImage: url(../img/rate-star-button-hover.svg);
 
-	.navbarButton(@color, @image);
+	.navbarButton(@color, @image, @hoverImage);
 }
 
 .aboutButton {
 	@color: rgba(253, 151, 31, 0.5);
 	@image: url(../img/baseline-list-24px.svg);
+	@hoverImage: url(../img/baseline-list-24px-hover.svg);
 
-	.navbarButton(@color, @image);
+	.navbarButton(@color, @image, @hoverImage);
 }
 
 .navbar-toggler.x-animation {

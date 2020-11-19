@@ -21,11 +21,7 @@
    id="metadata42"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
-   id="defs40">
-	
-
-		
-	</defs><sodipodi:namedview
+   id="defs40" /><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -44,12 +40,18 @@
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
-   inkscape:current-layer="Capa_1"
-   inkscape:document-rotation="0" />
-<path
-   id="polygon2"
-   style="fill:#ffffff;stroke-width:0.804;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1;opacity:0.5"
-   d="m 228.8651,270.89847 -28.70571,-90.21796 75.8651,-53.31061 H 183.75612 L 153,35.10153 122.24388,127.3699 H 29.97551 l 75.8651,53.31061 L 77.134898,270.89847 153,215.53745 Z" />
+   inkscape:current-layer="Capa_1" />
+<g
+   id="g5"
+   transform="matrix(0.80408163,0,0,0.80408163,29.97551,29.97551)">
+	<g
+   id="star-rate">
+		<polygon
+   points="247.35,299.625 211.65,187.425 306,121.125 191.25,121.125 153,6.375 114.75,121.125 0,121.125 94.35,187.425 58.65,299.625 153,230.775 "
+   fill="#fd971f"
+   id="polygon2" />
+	</g>
+</g>
 <g
    id="g7">
 </g>
