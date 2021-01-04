@@ -1,0 +1,45 @@
+@import (reference) url(basebar.less);
+
+footer {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 10px 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+
+	.socialContainer {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.copyright {
+		text-align: center;
+		margin-top: 10px;
+	}
+}
+
+.socialButton:extend(.buttonTheme) {
+	margin: 0;
+
+	@media (max-width: 767px) {
+		width: 50px;
+		height: 50px;
+	}
+
+	@media (min-width: 768px) {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+.linkedinButton:extend(.socialButton) {
+	background-image: url(../img/icons8-linkedin.svg);
+}
+
+.githubButton:extend(.socialButton) {
+	background-image: url(../img/icons8-octocat.svg);
+}
+
+.instagramButton:extend(.socialButton) {
+	background-image: url(../img/icons8-instagram.svg);
+}
