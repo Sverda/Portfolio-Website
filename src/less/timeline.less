@@ -1,0 +1,91 @@
+@background: #252827;
+
+@color-primary: #fd971f;
+@color-light: white;
+@color-dim: #6c6d6d;
+@spacing: 50px;
+@radius: 4px;
+
+@date: 120px;
+@dotborder: 4px;
+@dot: 11px;
+@line: 4px;
+
+@font-title: "Saira", sans-serif;
+@font-text: "Chivo", sans-serif;
+
+#timeline-content {
+	margin-top: @spacing;
+	text-align: center;
+}
+
+.timeline {
+	font-family: @font-title;
+	border-left: @line solid @color-primary;
+	border-bottom-right-radius: @radius;
+	border-top-right-radius: @radius;
+	color: fade(white, 90%);
+	font-family: @font-text;
+	margin: 0 auto;
+	letter-spacing: 0.5px;
+	position: relative;
+	line-height: 1.4em;
+	padding: @spacing;
+	list-style: none;
+	font-weight: 100;
+	max-width: 50%;
+	height: 100%;
+
+	h3 {
+		font-size: 1.05em;
+		white-space: nowrap;
+	}
+
+	p {
+		font-size: 0.8em;
+		white-space: nowrap;
+	}
+
+	.event {
+		border-bottom: 1px solid fade(@color-light, 10%);
+		padding-bottom: (@spacing * 0.5);
+		margin-bottom: @spacing;
+		position: relative;
+
+		&:last-of-type {
+			padding-bottom: 0;
+			margin-bottom: 0;
+			border: none;
+		}
+
+		&:before,
+		&:after {
+			position: absolute;
+			display: block;
+			top: 0;
+		}
+
+		&:before {
+			left: (((@date * 0.6) + @spacing + @line + @dot + (@dotborder * 2)) * 1.5) *
+				-1;
+			color: fade(@color-light, 70%);
+			content: attr(data-date);
+			text-align: right;
+			font-weight: 100;
+			font-size: 0.8em;
+			min-width: @date;
+			font-family: @font-title;
+		}
+
+		&:after {
+			box-shadow: 0 0 0 @dotborder fade(@color-primary, 100%);
+			left: (@spacing + @line + (@dot * 0.35)) * -1;
+			background: lighten(@background, 5%);
+			border-radius: 50%;
+			height: @dot;
+			width: @dot;
+			content: "";
+			top: 5px;
+		}
+	}
+}
