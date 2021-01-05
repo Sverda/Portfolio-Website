@@ -9,7 +9,19 @@ footer {
 
 	.socialContainer {
 		display: flex;
-		justify-content: space-evenly;
+		flex-flow: column nowrap;
+		align-items: center;
+
+		.block-title,
+		.block-content {
+			display: block;
+		}
+
+		.block-content {
+			button + button {
+				margin-left: 10px;
+			}
+		}
 	}
 
 	.copyright {
