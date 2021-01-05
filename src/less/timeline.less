@@ -20,14 +20,11 @@
 }
 
 .timeline {
-	font-family: @font-title;
 	border-left: @line solid @color-primary;
 	border-bottom-right-radius: @radius;
 	border-top-right-radius: @radius;
-	color: fade(white, 90%);
-	font-family: @font-text;
+	color: fade(white, 80%);
 	margin: 0 auto;
-	letter-spacing: 0.5px;
 	position: relative;
 	line-height: 1.4em;
 	padding: @spacing;
@@ -36,14 +33,28 @@
 	max-width: 50%;
 	height: 100%;
 
-	h3 {
-		font-size: 1.05em;
+	h2,
+	h3,
+	p {
 		white-space: nowrap;
+		margin: 0;
+		padding: 0;
+	}
+
+	h2 {
+		font-family: @font-title;
+		font-size: 1.05em;
+		letter-spacing: 1.5px;
+	}
+
+	h3 {
+		font-family: @font-text;
+		font-size: 0.8em;
 	}
 
 	p {
-		font-size: 0.8em;
-		white-space: nowrap;
+		font-family: @font-text;
+		font-size: 0.6em;
 	}
 
 	.event {
